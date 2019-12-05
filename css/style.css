@@ -1,0 +1,115 @@
+/*
+colors used:
+cream: #e0cfc2
+white: #f6f4f2
+pale orange: #dda882
+blue: #4b5668
+black: #191819
+
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Alegreya Sans SC', sans-serif;
+*/
+
+img{
+  width: 100%
+}
+
+body {
+  background-color: #f6f4f2;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #191819;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  line-height: 1.6;
+  color: #4b5668;
+}
+h1{
+  font-size: 2.0em;
+  font-weight: 500;
+}
+h2{
+  font-size: 1.75em;
+  font-weight: 500;
+}
+h3{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h4{
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+a {
+  color: #dda882;
+  text-decoration: none;
+}
+a:hover {
+  color: #dda882;
+  text-decoration: underline;
+}
+a:focus {
+  color: #dda882;
+  text-decoration: underline;
+}
+a:visited {
+  color: #4b5668;
+  text-decoration: underline;
+}
+.button {
+  display: inline-block;
+  background-color: #dda882;
+  color: #f6f4f2 !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 4px;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button-contact {
+  background color: transparent;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 4px;
+  border: 2px solid #dda882;
+}
+.button-contact:hover {
+  background-color: #dda882;
+  color: #4b5668 !important;
+  text-decoration: none;
+}
+.button-contact:focus {
+  background-color: #dda882;
+  color: #4b5668;
+}
+.button-resume {
+  background-color: #4b5668;
+  color: #f6f4f2 !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 4px;
+}
+.button-resume:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+}
+.button-resume:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
