@@ -9,6 +9,14 @@ black: #191819
 font-family: 'Alegreya Sans', sans-serif;
 font-family: 'Alegreya Sans SC', sans-serif;
 */
+:root{
+--lightaccent: #e0cfc2;
+--light: #f6f4f2;
+--accent: #dda882;
+--darkaccent: #4b5668;
+--dark: #191819;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,18 +26,18 @@ img {
 }
 
 body {
-  background-color: #f6f4f2;
+  background-color: var(--light);
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #191819;
+  color: var(--dark);
 }
 
 h1, h2, h3, h4 {
   font-family: 'Alegreya Sans SC', sans-serif;
   line-height: 1.6;
-  color: #4b5668;
+  color: var(--darkaccent);
 }
 
 h1 {
@@ -58,24 +66,24 @@ a {
 }
 
 a:hover {
-  color: #dda882;
+  color: var(--accent);
   text-decoration: underline;
 }
 
 a:focus {
-  color: #dda882;
+  color: var(--accent);
   text-decoration: underline;
 }
 
 a:visited {
-  color: #4b5668;
+  color: var(--darkaccent);
   text-decoration: underline;
 }
 
 .button {
   display: inline-block;
-  background-color: #dda882;
-  color: #f6f4f2 !important;
+  background-color: var(--accent);
+  color: var(light) !important;
   font-weight: 400;
   text-transform: uppercase;
   padding: 12px;
@@ -99,23 +107,23 @@ a:visited {
   text-transform: uppercase;
   padding: 12px;
   border-radius: 4px;
-  border: 2px solid #dda882;
+  border: 2px solid var(--accent);
 }
 
 .button-contact:hover {
-  background-color: #dda882;
-  color: #4b5668 !important;
+  background-color: var(--accent);
+  color: var(--darkaccent) !important;
   text-decoration: none;
 }
 
 .button-contact:focus {
-  background-color: #dda882;
-  color: #4b5668;
+  background-color: var(--accent);
+  color: var(--darkaccent);
 }
 
 .button-resume {
-  background-color: #4b5668;
-  color: #f6f4f2 !important;
+  background-color: var(--darkaccent);
+  color: var(--light) !important;
   font-weight: 400;
   text-transform: uppercase;
   padding: 12px;
@@ -143,7 +151,7 @@ a:visited {
 }
 
 header {
-  background-color: #4b5668;
+  background-color: var(--darkaccent);
   text-align: center;
   padding: 10px 0;
   position: fixed;
@@ -170,7 +178,7 @@ nav>ul>li {
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  color: #f6f4f2 !important;
+  color: var(--light) !important;
   font-size: .75em;
 }
 
@@ -183,7 +191,7 @@ nav>ul>li>a:focus {
 }
 
 nav>ul>li>a:visited {
-  color: #dda882;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -194,7 +202,7 @@ nav>ul>li>a:visited {
 main {
   padding-top: 160px;
   padding-bottom: 50px;
-  background-color: #e0cfc2;
+  background-color: var(--lightaccent);
   width: 100%;
 }
 
