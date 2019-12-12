@@ -80,6 +80,16 @@ a:visited {
   text-decoration: underline;
 }
 
+.row {
+  margin: 50px 0 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .button {
   display: inline-block;
   background-color: var(--accent);
@@ -147,21 +157,6 @@ a:visited {
 /* Layout Styling */
 .container {
   padding: 0 15px;
-}
-
-.row {
-  margin: 50px 0 25px 0;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding-right: 10px;
 }
 
 header {
@@ -254,13 +249,14 @@ main {
 
 /* medium devices */
 @media only screen and (min-width: 640px) {
-  body {
-    font-size: 18px;
-  }
 
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  body {
+    font-size: 18px;
   }
 
   nav {
@@ -273,6 +269,28 @@ main {
     padding-top: 130px;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+    h3 {
+    margin-top: 0;
+  }
+
+  #projects .row {
+    margin-bottom: 100px;
+  }
+
+  #skilltool .row {
+    margin-top: 18px;
+    width: 100%;
+  }
   #hero {
     text-align: center;
   }
@@ -280,18 +298,17 @@ main {
   #hero span {
     display: block;
   }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  #about-page h3 {
-    margin-top: 0;
-  }
 }
 
   /* large devices */
   @media only screen and (min-width: 1024px) {
+
+    [class*="col-"] {
+      float: left;
+      padding-right: 10px;
+      width: 100%;
+    }
+
     .col-lg-7 {
       width: 58.33%;
     }
@@ -305,15 +322,12 @@ main {
     }
 
     #skills, #tools {
-      float: unset;
+      float: none;
+      width: 100%;
     }
 
     #skilltool h2, #skills, #tools {
       padding-left: 50px;
-    }
-
-    #skilltool .row {
-      margin-top: 18px;
     }
 
     .container {
