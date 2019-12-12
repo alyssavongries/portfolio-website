@@ -303,6 +303,10 @@ main {
   /* large devices */
   @media only screen and (min-width: 1024px) {
 
+    body {
+      font-size: 20px;
+    }
+
     [class*="col-"] {
       float: left;
       padding-right: 10px;
