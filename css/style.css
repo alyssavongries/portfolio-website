@@ -161,7 +161,6 @@ a:visited {
 
 header {
   background-color: var(--darkaccent);
-  text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -170,18 +169,10 @@ header {
   box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.75);
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -205,11 +196,55 @@ nav>ul>li>a:visited {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+}
+
+.navtoggle .navtoggleresponsive {
+  position: relative;
+}
+
+.navtoggle .icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2em;
+  padding-right: 0px;
+}
+
+.navtoggleresponsive .icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2em;
+  padding-right: 0px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggleresponsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggleresponsive li:not(:last-child) {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid var(--lightaccent);
+}
+
+.navtoggleresponsive li:first-child {
+  border-top: none;
+}
+
+.col-nav {
+  display: block;
+  width: 50%;
+  float: right;
 }
 
 main {
-  padding-top: 160px;
+  padding-top: 80px;
   padding-bottom: 50px;
   background-color: var(--lightaccent);
   width: 100%;
@@ -221,11 +256,11 @@ main {
   height: auto;
 }
 
- #about img {
-   width: 25%;
-   max-width: 600px;
-   min-width: 290px;
- }
+#about img {
+  width: 25%;
+  max-width: 600px;
+  min-width: 290px;
+}
 
 #tattoodo a {
   color: var(--accent)
@@ -236,7 +271,7 @@ main {
   max-width: 150px;
   height: auto;
   padding: 10px;
-  float:left;
+  float: left;
 }
 
 #tatpara {
@@ -287,7 +322,6 @@ main {
 
 /* medium devices */
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -303,8 +337,25 @@ main {
     margin-top: 15px;
   }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+
   main {
-    padding-top: 130px;
+    padding-top: 180px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .logo {
+    width: 50%;
+    max-width: 400px;
   }
 
   [class*="col-"] {
@@ -317,8 +368,7 @@ main {
     width: 50%;
   }
 
-
-    h3 {
+  h3 {
     margin-top: 0;
   }
 
@@ -330,6 +380,7 @@ main {
     margin-top: 18px;
     width: 100%;
   }
+
   #hero {
     text-align: center;
   }
@@ -339,73 +390,77 @@ main {
   }
 }
 
-  /* large devices */
-  @media only screen and (min-width: 1024px) {
-
-    body {
-      font-size: 20px;
-    }
-
-    [class*="col-"] {
-      float: left;
-      padding-right: 10px;
-      width: 100%;
-    }
-
-    .col-lg-7 {
-      width: 58.33%;
-    }
-
-    .col-lg-5 {
-      width: 41.66%;
-    }
-
-    .col-lg-4 {
-      width: 33.33%;
-    }
-
-    #skills, #tools {
-      float: none;
-      width: 100%;
-    }
-
-    #skilltool h2, #skills, #tools {
-      padding-left: 50px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/* large devices */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
   }
 
-  /* animation */
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-
-    50% {
-      fill: #fcffad;
-    }
-
-    100% {
-      fill: #f76414;
-    }
+  [class*="col-"] {
+    float: left;
+    padding-right: 10px;
+    width: 100%;
   }
 
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  .col-lg-7 {
+    width: 58.33%;
   }
 
-  @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  #skills, #tools {
+    float: none;
+    width: 100%;
+  }
+
+  #skilltool h2, #skills, #tools {
+    padding-left: 50px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* animation */
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -417,8 +472,13 @@ main {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
