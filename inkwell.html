@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/1da74b4e61.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500|Alegreya+Sans:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,500|Alegreya+Sans:300,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,15 +20,15 @@
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact" oneclick="menuToggle()">Contact</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-  <main id="inkwell">
-    <div>
+    <main id="inkwell">
+  <div>
       <!--orange-->
       <div class="container" id="cover">
         <!--yellow-->
@@ -42,7 +42,7 @@
         <h1> InkWell </h1>
         <p> Role: UX Designer </p>
       </div>
-    </div>
+  </div>
     <div>
       <!--orange-->
       <div class="container">
@@ -63,31 +63,31 @@
             </p>
             <ul>
               <!--process outline-->
-              <li>
+              <li><a href="#problem">
                 <h3> Defining the Problem </h3>
-              </li>
-              <li>
+              </a></li>
+              <li><a href="#research">
                 <h3> Research </h3>
-              </li>
-              <li>
+              </a></li>
+              <li><a href="#outlining">
                 <h3> Outlining the Design </h3>
-              </li>
-              <li>
+              </a></li>
+              <li><a href="#testing">
                 <h3> Testing the Design </h3>
-              </li>
-              <li>
+              </a></li>
+              <li><a href="#defining">
                 <h3> Defining the UI </h3>
-              </li>
-              <li>
+              </a></li>
+              <li><a href="#prototype">
                 <h3> Prototype </h3>
-              </li>
-              <li>
-                <h3> Conclusion </h3>
-              </li>
+              </a></li>
+              <li><a href="#conclusion">
+              <h3> Conclusion </h3>
+              </a></li>
             </ul>
             <!--if this process outline can't be formatted correctly, add/create image-->
           </div>
-          <div>
+          <div id="problem">
             <!--blue-->
             <h2> Defining the Problem </h2>
             <div class=row>
@@ -129,17 +129,17 @@
                 <h3>Potential User Solutions</h3>
                 <ul>
                   <li> Provide an app that allows users to sort and store their inspiration in a design board or web of design boards. </li>
-                  <li> InkTank should have a functionality that lets users easily gather information from other platforms as well as from the InkTank to put in their collections.
+                  <li> InkWell should have a functionality that lets users easily gather information from other platforms as well as from the InkWell to put in their collections.
                   </li>
                   <li> The app could provide resources on what each style is as well as allowing users to search through categories.</li>
-                  <li>InkTank could allow users to share their experiences with certain artists as well as before and after photos.</li>
+                  <li>InkWell could allow users to share their experiences with certain artists as well as before and after photos.</li>
                   <li>The app will allow users make their inspiration collections public or private as well as allowing users to share their boards with specific people. This app will also allow users to export their boards into a pdf for printing or
                     e-mailing so they can share with their friends or artist.</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div>
+          <div id="research">
             <!--blue-->
             <h2> Research </h2>
             <h3> Competitor Analysis </h3>
@@ -149,7 +149,7 @@
               <div>
                 <picture>
                   <source srcset="img/inkwell/tattoodologo.png" media="(max-width:767px)">
-                  <img src="img/inkwell/tattoodologo.png" alt="My Image">
+                  <img src="img/inkwell/tattoodologo.png" alt="Tattoodo Logo">
                 </picture>
               </div>
               <div id="tatpara">
@@ -157,32 +157,32 @@
                   studios.</p>
               </div>
             </div>
-            <picture>
+            <picture class="img8">
               <source srcset="img/inkwell/swotmv1.png" media="(max-width:767px)">
-              <img src="img/inkwell/swotwv1.png" alt="My Image">
+              <img class="myImg" src="img/inkwell/swotwv1.png" alt="Tattoodo SWOT">
             </picture>
             <p>If you’d like a more in depth review of Tattoodo please see the full competitor research:</p>
             <div>
               <!--images in columns-->
-              <picture>
+              <picture class="img6">
                 <source srcset="img/inkwell/companalysismv1.png" media="(max-width:767px)">
-                <img src="img/inkwell/companalysismv1.png" alt="My Image">
+                <img class="myImg" src="img/inkwell/companalysismv1.png" alt="Tattoodo Analysis">
               </picture>
             </div>
             <div>
               <!--images in columns-->
-              <picture>
+              <picture class="img6">
                 <source srcset="img/inkwell/uxanalysismv1.png" media="(max-width:767px)">
-                <img src="img/inkwell/uxanalysiswv1.png" alt="My Image">
+                <img class="myImg" src="img/inkwell/uxanalysiswv1.png" alt="UX Analysis">
               </picture>
             </div>
             <h3> Surveys and Interviews </h3>
             <p>To start understanding the user, I wanted to see what they look for when searching for a tattoo.</p>
             <div>
               <!--make a separate column-->
-              <picture>
+              <picture class= "img7">
                 <source srcset="img/inkwell/stickynotesmv1.png" media="(max-width:767px)">
-                <img src="img/inkwell/stickynoteswv1.png" alt="My Image">
+                <img class="myImg" src="img/inkwell/stickynoteswv1.png" alt="My Image">
               </picture>
             </div>
             <div>
@@ -214,58 +214,51 @@
             <h3> User Personas </h3>
             <p> During research, I discovered that these characteristics didn't fluctuate very much with age, so I didn't feel the need to create an older persona. Once you hit your mid 20's, your prefrontal cortex is more fully developed and your
               decision making  becomes less erratic. </p>
-            <div>
               <!--to put personas in columns-->
-              <picture>
+              <picture class="img6">
                 <source srcset="img/inkwell/personatessamv1.png" media="(max-width:767px)">
-                <img src="img/inkwell/personatessawv1.png" alt="My Image">
+                <img class="myImg" src="img/inkwell/personatessawv1.png" alt="Tessa's Persona">
               </picture>
-            </div>
-            <div>
               <!--journeys in columns-->
-              <picture>
+              <picture class="img6">
                 <source srcset="img/inkwell/personacraigmv1.png" media="(max-width:767px)">
-                <img src="img/inkwell/personacraigwv1.png" alt="My Image">
+                <img class="myImg" src="img/inkwell/personacraigwv1.png" alt="Craig's Persona">
               </picture>
-            </div>
             <h3> User Journeys </h3>
             <p>I also followed the personas on relevant user flows based on likely user stories. Below is one user flow for each persona. </p>
-            <picture>
+            <picture class="img6">
               <source srcset="img/inkwell/userjourneytessamv1.png" media="(max-width:767px)">
-              <img src="img/inkwell/userjourneytessawv1.png" alt="My Image">
+              <img class="myImg" src="img/inkwell/userjourneytessawv1.png" alt="Tessa's Journey">
             </picture>
-          </div>
-          <div>
             <!--journeys in columns-->
-            <picture>
+            <picture class="img6">
               <source srcset="img/inkwell/userjourneycraigmv1.png" media="(max-width:767px)">
-              <img src="img/inkwell/userjourneycraigwv1.png" alt="My Image">
+              <img class="myImg" src="img/inkwell/userjourneycraigwv1.png" alt="Craig's Journey">
             </picture>
-          </div>
         </div>
-        <div>
+        <div id="outlining">
           <!--blue-->
           <h2> Outlining the Design </h2>
           <h3> Cardsort </h3>
           <p>I conducted a card sort to get an idea of how I should build the sitemap. I wanted to make sure the user would understand the layout</p>
-          <picture>
+          <picture class="img8">
             <source srcset="img/inkwell/cardsortmv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/cardsortwv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/cardsortwv1.png" alt="Cardsort Results">
           </picture>
           <h3>Sitemap</h3>
           <p>The cardsort and some user testing informed the final sitemap, below.</p>
-          <picture>
+          <picture class="img8">
             <source srcset="img/inkwell/sitemapmv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/sitemapwv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/sitemapwv1.png" alt="Sitemap">
           </picture>
           <h3>Wireframes</h3>
           <p>After building the sitemap, I started to wireframe the functionalities. The following is a wireframe for leaving a review for a specific artist. </p>
-          <picture>
+          <picture class="img8">
             <source srcset="img/inkwell/wireframemv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/wireframewv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/wireframewv1.png" alt="Wireframe Example">
           </picture>
         </div>
-        <div>
+        <div id="testing">
           <!--blue-->
           <h2> Testing the Design </h2>
           <h3> Usability Testing </h3>
@@ -298,55 +291,57 @@
               <li>Send a tattoo board to a friend</li>
             </ol>
           </div>
+          <div id="results">
           <h3> Results </h3>
           <picture class="img6">
             <source srcset="img/inkwell/rainbowmv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/rainbowwv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/rainbowwv1.png" alt="Rainbow Spreadsheet">
           </picture>
           <picture class="img6">
             <source srcset="img/inkwell/usabilitytestingmv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/usabilitytestingwv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/usabilitytestingwv1.png" alt="Usability Testing Results">
           </picture>
           <h3> Collaborative Design </h3>
           <p>I also tested the prototype with a group of other designers to get their feedback. Below are some examples of how I incorporated comments into my design.</p>
           <picture class="img4">
             <source srcset="img/inkwell/collab1mv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/collab1mv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/collab1mv1.png" alt="Collaboration Feedback 1">
           </picture>
           <picture class="img4">
             <source srcset="img/inkwell/collab2mv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/collab2mv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/collab2mv1.png" alt="Collaboration Feedback 2">
           </picture>
           <picture class="img4">
             <source srcset="img/inkwell/collab3mv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/collab3mv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/collab3mv1.png" alt="Collaboration Feedback 3">
           </picture>
         </div>
-        <div>
+        </div>
+        <div id="defining">
           <!--blue-->
           <h2> Defining the UI </h2>
-          <picture>
+          <picture class="imgfloat">
             <source srcset="img/inkwell/ui1mv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/ui1mv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/ui1mv1.png" alt="Style Guide UI Elements">
           </picture>
-          <picture>
+          <picture class="imgfloat">
             <source srcset="img/inkwell/ui2mv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/ui2mv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/ui2mv1.png" alt="Style Guide Iconography">
           </picture>
-          <picture>
+          <picture class="imgfloat">
             <source srcset="img/inkwell/ui3mv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/ui3mv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/ui3mv1.png" alt="Style Guide Typography">
           </picture>
-          <picture>
+          <picture class="imgfloat">
             <source srcset="img/inkwell/ui4mv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/ui4mv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/ui4mv1.png" alt="Style Guide Color Palette">
           </picture>
-          <picture>
+          <picture class="imgfloat">
             <source srcset="img/inkwell/uitextwv1.png" media="(max-width:767px)">
-            <img src="img/inkwell/uitextwv1.png" alt="My Image">
+            <img class="myImg" src="img/inkwell/uitextwv1.png" alt="Style Guide Text Fields">
           </picture>
         </div>
-        <div>
+        <div id="prototype">
           <!--blue-->
           <h2> Prototype </h2>
           <div>
@@ -356,7 +351,7 @@
             <a href="https://youtu.be/fV1nI5n0ivs"> Link to InkWell Prototype Video Presentation </a>
           </div>
         </div>
-        <div>
+        <div id="conclusion">
           <!--blue-->
           <h2> Conclusion </h2>
           <p>InkWell has some growing to do. There are several aspects of the app which I would like to flesh out more completely and some functionalities which I would like to create. As always, the prototype could benefit from more user testing and
@@ -364,6 +359,13 @@
         </div>
       </div>
     </div>
+    <!--Modal-->
+      <div id="myModal" class="modal">
+        <div id="caption"></div>
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" alt="modal image">
+      </div>
+      </div>
   </main>
   <footer id="contact">
     <div class="container">
