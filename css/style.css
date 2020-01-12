@@ -12,8 +12,10 @@ font-family: 'Alegreya Sans SC', sans-serif;
 :root {
   --lightaccent: #dbdbdb;
   --light: #f6f4f2;
-  --accent: #d28879;
+  --accent: #f19383;
+  --link: #b42d2d;
   --darkaccent: #4b5668;
+  --darker: #39414f;
   --dark: #191819;
 }
 
@@ -74,7 +76,7 @@ h4 {
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -93,6 +95,26 @@ a:visited {
   text-decoration: underline;
 }
 
+#process ul {
+  list-style: none;
+}
+
+#process h3:hover {
+  color: var(--accent);
+}
+
+#process h3:focus {
+  color: var(--accent);
+}
+
+#process a:hover {
+  text-decoration-color: var(--accent);
+}
+
+#process a:focus {
+  text-decoration-color: var(--accent);
+}
+
 .row {
   margin: 50px 0 25px;
 }
@@ -106,7 +128,7 @@ a:visited {
 .button {
   display: inline-block;
   background-color: var(--accent);
-  color: var(--darkaccent) !important;
+  color: var(--darker) !important;
   font-weight: 400;
   text-transform: uppercase;
   padding: 12px;
@@ -125,25 +147,25 @@ a:visited {
 }
 
 .button-contact {
-  background-color: transparent;
   font-weight: 400;
+  color: var(--darker) !important;
   text-transform: uppercase;
   padding: 12px;
   border-radius: 4px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--darker);
   transition-duration: 0.2s;
   transition-property: background-color;
 }
 
 .button-contact:hover {
   background-color: var(--accent);
-  color: var(--darkaccent) !important;
   text-decoration: none;
+  border: var(--accent) !important;
 }
 
 .button-contact:focus {
   background-color: var(--accent);
-  color: var(--darkaccent);
+  color: var(--darker);
 }
 
 .button-resume {
@@ -299,6 +321,10 @@ main {
   width: 100%;
 }
 
+.anchor {
+  padding-top: 80px;
+}
+
 .sunset {
   width: 100%;
   max-width: 100%;
@@ -312,6 +338,14 @@ main {
 }
 
 #tattoodo a {
+  color: var(--link);
+}
+
+#tattoodo a:hover {
+  color: var(--accent);
+}
+
+#tattoodo a:focus {
   color: var(--accent);
 }
 
@@ -456,6 +490,10 @@ main {
 
   main {
     padding-top: 180px;
+  }
+
+  .anchor {
+    padding-top: 140px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -611,7 +649,7 @@ main {
 
 @keyframes cloud-move {
   from {
-    transform: translate(0, px);
+    transform: translate(0);
   }
 
   to {
@@ -630,11 +668,11 @@ main {
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(0, px);
+    transform: translate(0);
   }
 
   to {
-    transform: translate(30px, 2px);
+    transform: translate(30px, 0);
   }
 }
 
