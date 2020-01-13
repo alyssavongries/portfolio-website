@@ -489,6 +489,10 @@ main {
     margin: 1em 0;
   }
 
+  nav > ul > li {
+    display: inline-block;
+  }
+
   main {
     padding-top: 180px;
   }
