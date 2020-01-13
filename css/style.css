@@ -198,6 +198,7 @@ header {
   padding: 10px 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
   -webkit-box-shadow: 0 3px 4px 0 rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0 3px 4px 0 rgba(50, 50, 50, 0.75);
   box-shadow: 0 3px 4px 0 rgba(50, 50, 50, 0.75);
