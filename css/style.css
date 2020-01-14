@@ -234,7 +234,7 @@ nav > ul > li > a:visited {
   max-width: 150px;
 }
 
-.navtoggle .navtoggleresponsive {
+.navtoggle {
   position: relative;
 }
 
@@ -246,7 +246,7 @@ nav > ul > li > a:visited {
   padding-right: 0;
 }
 
-.navtoggleresponsive .icon {
+.navtoggle .icon {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -258,17 +258,17 @@ nav > ul > li > a:visited {
   display: none;
 }
 
-.navtoggleresponsive nav {
+.navtoggle nav {
   padding: 24px 0 0;
 }
 
-.navtoggleresponsive li:not(:last-child) {
+.responsive li:not(:last-child) {
   display: block;
   padding: 10px 0;
   border-top: 1px solid var(--lightaccent);
 }
 
-.navtoggleresponsive li:first-child {
+.navtoggle li:first-child {
   border-top: none;
 }
 
@@ -507,6 +507,11 @@ main {
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .responsive li:not(:last-child) {
+    padding: 0;
+    border-top: none;
   }
 
   .logo {
