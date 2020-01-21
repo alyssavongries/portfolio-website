@@ -231,19 +231,15 @@ nav > ul > li > a:visited {
 }
 
 .logo {
-  max-width: 150px;
+  padding-top: 10px;
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .navtoggle {
+  background-color: var(--darkaccent);
   position: relative;
-}
-
-.navtoggle .icon {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 2em;
-  padding-right: 0;
 }
 
 .navtoggle .icon {
@@ -259,10 +255,11 @@ nav > ul > li > a:visited {
 }
 
 .navtoggle nav {
-  padding: 24px 0 0;
+  padding: none;
 }
 
 .responsive li:not(:last-child) {
+  background-color: var(--darkaccent);
   display: block;
   padding: 10px 0;
   border-top: 1px solid var(--lightaccent);
@@ -513,8 +510,7 @@ main {
   }
 
   .logo {
-    width: 50%;
-    max-width: 400px;
+    height: 80px;
   }
 
   [class*="col-"] {
@@ -603,6 +599,10 @@ main {
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 20px;
+  }
+
+  .logo {
+    height: 100px;
   }
 
   [class*="col-"] {
