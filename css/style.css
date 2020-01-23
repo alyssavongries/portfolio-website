@@ -299,7 +299,6 @@ nav > ul > li > a:visited {
   float: left;
   width: 100%;
   object-fit: cover;
-  padding: 2px;
 }
 
 .imgfloat img {
