@@ -204,6 +204,16 @@ header {
   box-shadow: 0 3px 4px 0 rgba(50, 50, 50, 0.75);
 }
 
+h3 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -582,7 +592,7 @@ main {
     max-height: 95%;
   }
 
-  h3 {
+  #process h3 {
     margin-top: 0;
   }
 

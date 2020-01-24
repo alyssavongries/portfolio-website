@@ -99,23 +99,25 @@
             </ul>
             <div>
               <h3>Functional Requirements</h3>
-                <ul>
-                  <li> Navigtion method to get between all pages </li>
-                  <li>Homepage</li>
-                    <ul>
-                      <li>Short introduction to me</li>
-                      <li>Links to project/portfolio piece pages</li>
-                    </ul>
-                  <li>About Me Page</li>
-                    <ul>
-                      <li>Personal introduction</li>
-                      <li>Resume access (PDF in separate window)</li>
-                      <li>Outline of my Skills</li>
-                      <li>List of the Tools I use</li>
-                    </ul>
-                  <li>Two portfolio piece pages with case study/showcase</li>
-                  <li>Contact section on each page</li>
-                </ul>
+              <ul>
+                <li> Navigtion method to get between all pages </li>
+                <li>Homepage
+                  <ul>
+                    <li>Short introduction to me</li>
+                    <li>Links to project/portfolio piece pages</li>
+                  </ul>
+                </li>
+                <li>About Me Page
+                  <ul>
+                    <li>Personal introduction</li>
+                    <li>Resume access (PDF in separate window)</li>
+                    <li>Outline of my Skills</li>
+                    <li>List of the Tools I use</li>
+                  </ul>
+                </li>
+                <li>Two portfolio piece pages with case study/showcase</li>
+                <li>Contact section on each page</li>
+              </ul>
             </div>
             <div>
               <h3>Technical Requirements</h3>
@@ -135,7 +137,7 @@
             <!-- wireframes image -->
             <p>Atom was used for the text editor and the pages were completed according to the initial wireframes. At this time, the toggle menu function was written for mobile. GitHub was used to host the portfolio project and GitHub Desktop as a
               git client.</p>
-            <picture class="img6">
+            <picture class="img8">
               <source srcset="img/portfolio/workflowmv1.png" media="(max-width:767px)">
               <img class="myImg" src="img/portfolio/workflowwv1.png" alt="Revision control workflow">
             </picture>
@@ -197,49 +199,69 @@
             </div>
             <div class="anchor" id="solver">
               <h2 id="challenge"> Challenges, Solutions and Iterations</h2>
-                <div>
-                  <h3>Navigation</h3>
-                  <p>The main navigation for this site is a responsive navigation bar that changes at the screen break between mobile and tablet. For mobile, the navigation is a hamburger menu and for tablet and desktop, navigation items are inline. </p>
-                  <h4>Challenge</h4>
-                  <p>When the “contact” link was clicked in the desktop or tablet version of the navigation, the hamburger menu would pop open and stay open. The mobile navigation would work perfectly with this code.</p>
-                  <h4>Solution</h4>
-                  <p>I discovered that I needed to revise the JavaScript function so that it added a new class when the menu was opened instead of adding a class by tagging extra letters on to the end of an existing class. I updated the CSS to restyle the existing class and add the new class stylings. </p>
-                </div>
-                <div>
-                  <h3>Smooth Scroll</h3>
-                  <p>At the beginning of the project, I felt that the project pages were unwieldy without some sort of outline and method of navigation within the page. I used links to anchors in the sections to provide users with a navigation directly to sections within the page. I’ve seen this method used in other sites. </p>
-                  <h4>Challenge</h4>
-                  <p>However, after user testing, it became clear that the abrupt jump to the section was confusing and users didn’t know where they were on the page. One user actually specifically mentioned that he would like the page to scroll to the section so he knew where he was on the page.
-</p>
-                  <p>Initially, I couldn’t get the smooth scrolling to work at all. When I did find code that worked and which I could understand and implement, the scroll was stopping on the section in questions, but past the section title.</p>
-                  <h4>Solution </h4>
-                  <p>It appeared that the navigation bar was changing the scroll. I added padding to the anchor class, which partially solved the problem. The scroll is now stopping with the section title in frame, but not at the top. And the titles aren’t always in the same place on the page, adding varying amounts of padding doesn’t appear to solve the issue.</p>
-                  <h4>Iteration</h4>
-                  <p>The next set of iterations will include a solid solution to this problem. </p>
-                  <p>Users can’t see the quick links once they’ve navigated to a section. They either have to scroll through the page or scroll back up to the top. Another navigation bar that’s always visible could provide a solution. I’d like to investigate possibilities for future updates. </p>
-                </div>
-                <div>
-                  <h3>Lightbox</h3>
-                  <p>I felt that the images in the project pages were too small and were difficult to read. I wanted to give users the ability to enlarge images by clicking on them without losing their place on the page.
-</p>
-                  <p>Finding a function that was short and easy for me to comprehend and implement was difficult. I took me some trial and error to get it to work. It’s very rudimentary, enlarging an image when it’s clicked and making the background dark.</p>
-                  <h4>Challenge</h4>
-                  <p>Initially after I got the modal the work, the image thumbnails would overlay the navigation bar when a user hovered over with mouse or keyboard. </p>
-                  <h4>Solution </h4>
-                  <p>I changed the z-index of the navigation bar so that it was higher than any of the other elements on the page. This solved the issue. </p>
-                  <h4>Iteration</h4>
-                  <p>In future iterations, I like to implement a lightbox which would allow users to scroll through all the images in the page after opening one of the images from the thumbnail. </p>
-                </div>
-                <div>
-                  <h3>Future Considerations and Reflection </h3>
-                  <p>There are several other ideas I have for future iterations. I’d like to learn to add animations of the functionalities in the page so that readers can see what I’m talking about in real time. I also plan do conduct more user testing. I’d like to conduct some A/B testing, for example. </p>
-                  <p>This portfolio has very limited functionality compared to most other projects. The main advantage of using it to continue UX investigations is that it’s small scale, so the likelihood of confused data from conflating factors is lower. There’s not much to get in the way of what data is saying. I think this will make it easier to get down to the root cause of any problem.  It’s also a good place for exploring. If I chose to do something outside the box in future interaction and it doesn’t work, there’s no outside investor loss to worry about.</p>
-                  <p>Building this site has given me better context for where UX fits into the product development. It’s also given a taste of how complicated it can be to keep everything in mind when coding a project from a wireframe or prototype. I’d like to continue learning more about various functions required on product development teams.</p>
-                </div>
+              <div>
+                <h3>Navigation</h3>
+                <p>The main navigation for this site is a responsive navigation bar that changes at the screen break between mobile and tablet. For mobile, the navigation is a hamburger menu and for tablet and desktop, navigation items are inline.
+                </p>
+                <h4>Challenge</h4>
+                <p>When the “contact” link was clicked in the desktop or tablet version of the navigation, the hamburger menu would pop open and stay open. The mobile navigation would work perfectly with this code.</p>
+                <h4>Solution</h4>
+                <p>I discovered that I needed to revise the JavaScript function so that it added a new class when the menu was opened instead of adding a class by tagging extra letters on to the end of an existing class. I updated the CSS to restyle
+                  the existing class and add the new class stylings. </p>
+              </div>
+              <div>
+                <h3>Smooth Scroll</h3>
+                <p>At the beginning of the project, I felt that the project pages were unwieldy without some sort of outline and method of navigation within the page. I used links to anchors in the sections to provide users with a navigation directly
+                  to sections within the page. I’ve seen this method used in other sites. </p>
+                <h4>Challenge</h4>
+                <p>However, after user testing, it became clear that the abrupt jump to the section was confusing and users didn’t know where they were on the page. One user actually specifically mentioned that he would like the page to scroll to the
+                  section so he knew where he was on the page.
+                </p>
+                <p>Initially, I couldn’t get the smooth scrolling to work at all. When I did find code that worked and which I could understand and implement, the scroll was stopping on the section in questions, but past the section title.</p>
+                <h4>Solution </h4>
+                <p>It appeared that the navigation bar was changing the scroll. I added padding to the anchor class, which partially solved the problem. The scroll is now stopping with the section title in frame, but not at the top. And the titles
+                  aren’t always in the same place on the page, adding varying amounts of padding doesn’t appear to solve the issue.</p>
+                <h4>Iteration</h4>
+                <p>The next set of iterations will include a solid solution to this problem. </p>
+                <p>Users can’t see the quick links once they’ve navigated to a section. They either have to scroll through the page or scroll back up to the top. Another navigation bar that’s always visible could provide a solution. I’d like to
+                  investigate possibilities for future updates. </p>
+              </div>
+              <div>
+                <h3>Lightbox</h3>
+                <p>I felt that the images in the project pages were too small and were difficult to read. I wanted to give users the ability to enlarge images by clicking on them without losing their place on the page.
+                </p>
+                <p>Finding a function that was short and easy for me to comprehend and implement was difficult. I took me some trial and error to get it to work. It’s very rudimentary, enlarging an image when it’s clicked and making the background
+                  dark.</p>
+                <h4>Challenge</h4>
+                <p>Initially after I got the modal the work, the image thumbnails would overlay the navigation bar when a user hovered over with mouse or keyboard. </p>
+                <h4>Solution </h4>
+                <p>I changed the z-index of the navigation bar so that it was higher than any of the other elements on the page. This solved the issue. </p>
+                <h4>Iteration</h4>
+                <p>In future iterations, I like to implement a lightbox which would allow users to scroll through all the images in the page after opening one of the images from the thumbnail. </p>
+              </div>
+              <div>
+                <h3>Future Considerations and Reflection </h3>
+                <p>There are several other ideas I have for future iterations. I’d like to learn to add animations of the functionalities in the page so that readers can see what I’m talking about in real time. I also plan do conduct more user
+                  testing. I’d like to conduct some A/B testing, for example. </p>
+                <p>This portfolio has very limited functionality compared to most other projects. The main advantage of using it to continue UX investigations is that it’s small scale, so the likelihood of confused data from conflating factors is
+                  lower. There’s not much to get in the way of what data is saying. I think this will make it easier to get down to the root cause of any problem. It’s also a good place for exploring. If I chose to do something outside the box in
+                  future interaction and it doesn’t work, there’s no outside investor loss to worry about.</p>
+                <p>Building this site has given me better context for where UX fits into the product development. It’s also given a taste of how complicated it can be to keep everything in mind when coding a project from a wireframe or prototype. I’d
+                  like to continue learning more about various functions required on product development teams.</p>
+              </div>
             </div>
             <div class="anchor">
               <h2 id="links"> Credits and Links </h2>
-              <p></p>
+              <p> If you're interested in the underpinnings of my portfolio, you're welcome to take a look at the GitHub repository linked below. I've also included a link to my codepen account, where you'll find some small introductory code experiments.</p>
+              <div>
+              <a href="https://github.com/alyssavongries/portfolio-website" target="_blank"> Github Repository for the Portfolio Website </a>
+              </div>
+              <div>
+              <a href="https://codepen.io/AlyssaElVee" target="_blank"> Codepen account </a>
+              </div>
+              <div>
+              <a href="https://alyssavongries.com" target="_blank"> Portfolio Website </a>
+              </div>
             </div>
           </div>
         </div>
@@ -265,14 +287,12 @@
         <a href="https://github.com/alyssavongries/" target="_blank">
           <!-- Github Icon -->
           <svg height="512px" id="github" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          	<style type="text/css">
-          	</style>
-          	<g>
-            <path
-          		class="st0"
-          		d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
-              </path>
-              </g>
+            <style type="text/css">
+            </style>
+            <g>
+              <path class="st0"
+                d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z" />
+            </g>
           </svg>
         </a>
         <a href="https://www.linkedin.com/in/alyssa-vongries-17305398/" target="_blank">
