@@ -49,7 +49,8 @@ footer {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: 'Alegreya Sans SC', sans-serif;
   line-height: 1.6;
   color: var(--darkaccent);
@@ -73,6 +74,11 @@ h3 {
 h4 {
   font-size: 1.25em;
   font-weight: 300;
+}
+h5 {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 10px 20px;
 }
 
 a {
@@ -314,6 +320,13 @@ nav > ul > li > a:visited {
 .imgfloat img {
   display: inline-block;
   height: 50vw;
+  width: auto;
+  padding: 2px;
+}
+
+.imglogo img {
+  display: inline-block;
+  height: 100px;
   width: auto;
   padding: 2px;
 }
