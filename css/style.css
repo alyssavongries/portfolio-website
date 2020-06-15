@@ -75,6 +75,7 @@ h4 {
   font-size: 1.25em;
   font-weight: 300;
 }
+
 h5 {
   font-size: 1em;
   font-weight: 300;
@@ -312,7 +313,7 @@ nav > ul > li > a:visited {
 }
 
 .img4 img {
-  float: left;
+  float: block;
   width: 100%;
   object-fit: cover;
 }
@@ -325,7 +326,6 @@ nav > ul > li > a:visited {
 }
 
 .imglogo img {
-  display: inline-block;
   height: 100px;
   width: auto;
   padding: 2px;
