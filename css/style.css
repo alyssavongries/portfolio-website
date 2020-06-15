@@ -326,7 +326,7 @@ nav > ul > li > a:visited {
 }
 
 .imglogo img {
-  height: 100px;
+  height: 80px;
   width: auto;
   padding: 2px;
 }
@@ -596,6 +596,12 @@ main {
   .imgfloat img {
     display: inline-block;
     height: 18.5vw;
+    width: auto;
+    padding: 2px;
+  }
+
+  .imglogo img {
+    height: 100px;
     width: auto;
     padding: 2px;
   }
