@@ -292,6 +292,13 @@ nav > ul > li > a:visited {
   float: right;
 }
 
+.imglogo img {
+  display: inline-block;
+  height: 80px;
+  width: auto;
+  padding: 2px;
+}
+
 .img8 img {
   display: block;
   margin-left: auto;
@@ -321,12 +328,6 @@ nav > ul > li > a:visited {
 .imgfloat img {
   display: inline-block;
   height: 50vw;
-  width: auto;
-  padding: 2px;
-}
-
-.imglogo img {
-  height: 80px;
   width: auto;
   padding: 2px;
 }
